@@ -1,4 +1,4 @@
-# driftingGratings3 for visual stimulation
+# driftingGratings 3 for visual stimulation
 #-----------------------------------------------------------------------------
 # stimuli are defined in a csv that needs to be specified in the code here below
 # every stimulus condition is repeated for a number of times specified in the 
@@ -6,10 +6,10 @@
 # pseudorandom way (every stimulus is presented in a randomized order before 
 # skipping to the next iteration).
 #
-# -NO TCP COMMUNICATION IS USED
-# -For every stimulus, a corresponding code specified in the CSV file is sent to
+# - NO TCP COMMUNICATION IS USED
+# - For every stimulus, a corresponding code specified in the CSV file is sent to
 #     the parallel port
-# -Trials are divided in pre-stimulus and stimulus 
+# - Trials are divided in pre-stimulus and stimulus 
 
 #-------------------------------------------------------------
 #--- USER PARAMETERS ----- YOU CAN CHANGE THEM ---------------
@@ -34,10 +34,7 @@ whiteCode = 3
 #-------------------------------------------------------------
 
 
-from psychopy import core, visual, event, parallel, data
-import pandas
-import json
-import random, socket, select
+from psychopy import visual, event, parallel, data
 import time
 
 cond = data.importConditions(conditionsFile)
