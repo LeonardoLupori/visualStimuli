@@ -1,6 +1,5 @@
 from psychopy import visual, event, parallel
 import itertools
-import numpy as np
 import random
 
 #-------------------------------------------------------------------------------
